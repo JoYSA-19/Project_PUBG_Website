@@ -1,0 +1,318 @@
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+p{
+    text-indent: 2em;
+}
+h5{
+    margin-bottom: 2px;
+    text-decoration: underline;
+}
+figcaption{
+    text-align: center;
+    color: darkslateblue;
+}
+#wrapper{
+    margin-top: 1em;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(34, 30, 31, 0.8);
+    color: white;
+    min-width: 960px;
+}
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-width: 900px;
+}
+header{
+    background-image: url(../imagesVideos/background/edited_SHUTTERSTOCK_GUNSHOT_GUN_FIRING.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+header h1{
+    line-height: 136px;
+    font-size: 4em;
+    padding: 100px;
+    margin-bottom: 0;
+    text-indent: 170px;
+}
+nav{
+    line-height: 2em;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #040322;
+    margin-bottom: -24px;
+}
+nav li{
+    display: inline;
+}
+nav ul a{
+    padding-right: 15px;
+    padding-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: lightblue;
+}
+#leftpane{
+    height: 65%;
+    width: 310px;
+    background-image: url(../imagesVideos/background/editedLeftPane.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: fixed;
+    color: cadetblue;
+}
+#lefttext{
+    margin: auto;
+    position: relative;
+    top: 25%;
+    font-size: 2.5em;
+    padding: 0 55px;
+    text-align: center;
+}
+ul a{
+    color: cadetblue;
+    text-decoration: none;
+}
+ul a:hover{
+    text-decoration: underline;
+    color: lightblue;
+}
+#rightpane{
+    padding-top: 20px;
+    margin-left: 350px;
+    padding-right: 20px;
+    font-size: large;
+    min-height: 500px;
+    height: 65%;
+}
+footer{
+    color: white;
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+}
+.infosection{
+    border: #040322 solid 4px;
+    color: #221e1f;
+    padding: 0 15px;
+    background-color: darkgray;
+}
+main h2{
+    border-bottom: darkblue solid;
+}
+.idcard{
+    background-image: url(../imagesVideos/background/id_borderframe.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 50px 105px 90px 50px;
+    width: 590px;
+    height: 390px;
+    color: black;
+}
+.vehicleidcard{
+    background-image: url(../imagesVideos/background/car_id_background.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    width: 550px;
+    height: 378px;
+    color: white;
+    font-size: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body ul ul{
+    display: none;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -50px;
+    width: 170px;
+}
+body ul li:hover ul{
+    display: block;
+    background-color: rgba(105,105,105,0.8);
+    padding: 0;
+}
+body ul ul li{
+    display: block;
+    font-size: 0.5em;
+}
+.carIdName{
+    text-decoration: underline;
+    text-align: right;
+    margin-top: -15px;
+}
+dl dt{
+    padding-top: 1.2em;
+    padding-bottom: 0.2em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.hilight{
+    color: darkred;
+    font-weight: bold;
+}
+table{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+table img{
+    display: block;
+    margin-bottom: -4px;
+}
+#bg{
+    float: left;
+    width: 310px;
+}
+main img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tablet{
+    display: none;
+}
+.otherDevices{
+    display: block;
+}
+.lightred{
+    color: red;
+    font-weight: bold;
+}
+input,textarea{
+    display: block;
+}
+figure{
+    margin: 0;
+}
+audio{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.stickright{
+    margin-left: 270px;
+}
+
+
+@media only screen and (max-width: 1024px){
+
+    body{
+        margin: -45px 0 0 0;
+        padding: 0;
+        min-width: 0;
+    }
+    #wrapper{
+        width: auto;
+        min-width: 0;
+    }
+    nav a:hover{
+        text-decoration: none;
+        color: white;
+    }
+    ul a:hover{
+        text-decoration: none;
+        color: cadetblue;
+    }
+    body ul li:hover ul{
+        display: none;
+    }
+    .idcard{
+        background-image: none;
+        padding: 30px 50px 50px 20px;
+        width: 590px;
+        color: black;
+        height: 350px;
+        border: dashed brown;
+        width: auto;
+    }
+    body ul a:active{
+        color: darkgoldenrod;
+    } 
+    .tablet{
+        display: block;
+    }
+    .otherDevices{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        margin: 0;
+        min-width: 575px;
+    }
+    header{
+        background-image: url(../imagesVideos/background/edited2_SHUTTERSTOCK_GUNSHOT_GUN_FIRING.jpg);
+        background-position: right;
+    }
+    header h1{
+        font-size: 2em;
+        line-height: 70px;
+        padding: 0;
+        text-indent: 20px;
+    }
+    /*
+    #leftpane{
+        position: relative;
+        background-image: none;
+        height: auto;
+        width: auto;
+    }
+    #lefttext{
+        top: auto;
+        font-size: 1.1em;
+        display: inline;
+    }*/
+    nav li{
+        display: block;
+        font-size: 1em;
+        padding: 0.2em;
+        border: lightgray 2px solid;
+        line-height: 1em;
+        background-color: #040322;
+    }
+    nav{
+        margin: 0 10px 0 -30px;
+        opacity: 0.6;
+        padding: 0;
+        background-color: transparent;
+    }
+    #leftpane{
+        display: none;
+    }
+    #rightpane{
+        margin: 0;
+        padding: 10px;
+        min-height: 0;
+        height: auto;
+    }
+    figure{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .otherDevices{
+        display: block;
+    }
+    figure{
+        margin-left: -15px;
+        margin-right: auto;
+    }
+}
