@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JY's PUBG page : Weapons</title>
+        <meta name="description" content="JY's PUBG MOBILE Page, weapon description and stats">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="../css/project.css">
+        <link rel="icon" href="../imagesVideos/favicon.ico" type="image/x-icon">
+        <style>
+            body{
+                background-image: url(../imagesVideos/background/edited_weaponsBackground.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            table {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                border: 5px solid darkkhaki;
+                min-width: 557px;
+                border-spacing: 0;
+            }
+            caption{
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            td, th { padding: 0.5em;
+                border: #040322 solid 1px;
+                border-collapse: collapse;
+                font-family: Arial, sans-serif; 
+            }
+            th{
+                background-color: #040322;
+            }
+            #fin tr td:first-child{
+                border-left: #040322;
+                color: red;
+            }
+        </style>
+        <script>
+            window.onkeydown = function(e){
+                if (event.shiftKey){
+                    window.scroll(0,0);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>JY's PUBG Page</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="modes.html">Modes</a></li>
+                    <li><a href="weapons.html">Weapons</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                </ul>
+            </nav>
+                <div id="leftpane">
+                </div>
+                <div id="rightpane">
+                    <main>
+                        <h1>Weapons</h1>
+                        <table>
+                            <caption>Assault Rifles</caption>
+                            <thead>
+                                <tr>
+                                    <th id="ammo">AMM</th>
+                                    <th id="name">Name</th>
+                                    <th id="dmg">DMG</th>
+                                    <th id="mag">MAG</th>
+                                    <th id="tmg">TMG</th>
+                                    <th id="spd">SPD</th>
+                                    <th id="fin">Find in</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="5" headers="ammo">5.56mm</td>
+                                    <td headers="name">M416</td>
+                                    <td headers="dmg">41</td>
+                                    <td rowspan="8" headers="mag">30 -> 40</td>
+                                    <td headers="tmg">3.1s</td>
+                                    <td headers="spd">880 m/s</td>
+                                    <td rowspan="4" headers="fin">World</td>
+                                </tr>
+                                <tr>
+                                    <td headers="name">SCAR-L</td>
+                                    <td headers="dmg">41</td>
+                                    <td headers="tmg">3.2s</td>
+                                    <td headers="spd">880 m/s</td>
+                                </tr>
+                                <tr>
+                                    <td headers="name">QBZ-95</td>
+                                    <td headers="dmg">41</td>
+                                    <td headers="tmg">3.1s</td>
+                                    <td headers="spd">870 m/s</td>
+                                </tr>
+                                <tr>
+                                    <td headers="name">G36C</td>
+                                    <td headers="dmg">41</td>
+                                    <td headers="tmg">3.0s</td>
+                                    <td headers="spd">870 m/s</td>
+                                </tr>
+                                <tr>
+                                    <td headers="name">AUG A3</td>
+                                    <td headers="dmg">42</td>
+                                    <td headers="tmg">3.0s</td>
+                                    <td headers="spd" class="lightred">940 m/s</td>
+                                    <td headers="fin">Airdrop</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3" headers="ammo">7.62mm</td>
+                                    <td headers="name">AKM</td>
+                                    <td headers="dmg" class="lightred">47</td>
+                                    <td headers="tmg">3.4s</td>
+                                    <td headers="spd">715 m/s</td>
+                                    <td rowspan="2" headers="fin">World</td>
+                                </tr>
+                                <tr>
+                                    <td headers="name">M762</td>
+                                    <td headers="dmg">46</td>
+                                    <td headers="tmg">3.1s</td>
+                                    <td headers="spd">715 m/s</td>
+                                </tr>
+                                <tr>
+                                    <td headers="name">Groza</td>
+                                    <td headers="dmg" class="lightred">47</td>
+                                    <td headers="tmg" class="lightred">2.9s</td>
+                                    <td headers="spd">715 m/s</td>
+                                    <td headers="fin">Airdrop</td>
+                                </tr>
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                        <dl>
+                            <dt>AMM</dt>
+                            <dd>Ammunition Type: The type of ammunition that the weapon accepts.</dd>
+                            <dt>DMG</dt>
+                            <dd>Hit Damage: The direct damage before applying other mitigating factors.</dd>
+                            <dt>MAG</dt>
+                            <dd>Ammo Per Mag: Maximum amount of ammo can be held in the magazine.</dd>
+                            <dt>TMG</dt>
+                            <dd>Time for Full Mag: The shooting duration for the whole mag of ammo.</dd>
+                            <dt>SPD</dt>
+                            <dd>Initial Bullet Speed: Higher number means less lead required against distant moving targets.</dd>
+                        </dl>
+                        <hr>
+                        <p>
+                            To see the detailed information and stats of the weapon, view in the Loadout system. 
+                        </p>
+                        <figure>
+                            <a href="../imagesVideos/weapon/weapon1.jpg"><img src="../imagesVideos/weapon/weapon1_web.jpg" alt="Go to Loadout1" width="500" height="375"></a>
+                            <figcaption>Click to see big image</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="../imagesVideos/weapon/weapon2.jpg"><img src="../imagesVideos/weapon/weapon2_web.jpg" alt="Go to Loadout1" width="500" height="375"></a>
+                            <figcaption>Click to see big image</figcaption>
+                        </figure>
+                        <p style="font-size: 1.5em;">Game Lobby -> Inventory -> Loadout</p>
+                        <img src="../imagesVideos/weapon/pubg_findStat.gif" src="Find Stat of weapons" width="240" height="180" style="margin-left: 220px;margin-bottom: 30px;">
+                    </main>
+                    <footer>
+                        <img src="../imagesVideos/editedLogoImage.jpg" alt="logo in footer" width="570" height="206">
+                        <br>Copyright &copy; JYang_CPSC1030_Project
+                         <a href="mailto:jonathan@yang.com">jonathan@yang.com</a>
+                    </footer>
+                </div>
+        </div>
+    </body>
+</html>

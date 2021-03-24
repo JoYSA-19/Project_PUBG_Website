@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JY's PUBG page</title>
+        <meta charset="utf-8">
+        <meta name="description" content="JY's PUBG MOBILE Page, play with JY">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="css/project.css">
+        <link rel="icon" href="imagesVideos/favicon.ico" type="image/x-icon">
+        <style>
+            body{
+                background-image: url(imagesVideos/background/edited_indexBackground.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            input,button{
+                display: inline;
+            }
+            button{
+                margin-bottom: 30px;
+            }
+        </style>
+        <script>
+            window.onkeydown = function(e){
+                if (event.shiftKey){
+                    window.scroll(0,0);
+                }
+            }
+            function myFunction() {
+              var copyText = document.getElementById("myInput");
+              copyText.select();
+              copyText.setSelectionRange(0, 99999);
+              document.execCommand("copy");
+              alert("Copied the text: " + copyText.value);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>JY's PUBG Page</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="main_pages/modes.html">Modes</a></li>
+                    <li><a href="main_pages/weapons.html">Weapons</a></li>
+                    <li><a href="main_pages/vehicles.html">Vehicles</a></li>
+                    <li><a href="main_pages/tips.html">Tips</a></li>
+                </ul>
+            </nav>
+            <div id="bg"></div>
+            <div id="leftpane">
+            </div>
+            <div id="rightpane">
+                <main>
+                    <div class="infosection" style="margin-bottom: 150px;">
+                        <p>
+                            Hi! Welcome to my website! I’m JY and 
+                            this is my website about the information I collected 
+                            in the game PUBG Mobile. Personal recommendations and 
+                            tips included!
+                        </p>
+                        <hr>
+                        <p>
+                            Feel Free to Jump into any page you want!
+                        </p>
+                        <p>
+                            Tip: Press <strong>SHIFT</strong> anytime if you want to go back to top of the webpage.
+                        </p>
+                        If you want to play with me, here's my IGN: <br>
+                        <input type="text" value="手感持续不在线" id="myInput" readonly>
+                        <button onclick="myFunction()">Copy JY's IGN</button>
+                    </div>
+                </main>
+                <footer>
+                    <img src="imagesVideos/editedLogoImage.jpg" alt="logo in footer" width="570" height="206">
+                    <br>Copyright &copy; JYang_CPSC1030_Project
+                        <a href="mailto:jonathan@yang.com">jonathan@yang.com</a>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
